@@ -1,5 +1,4 @@
-// Program to rotate an array by 
-// d elements
+// Program to rotate an array left by d elements
 
 #include<stdio.h>
 void rotate_array(int *array,unsigned int d,unsigned int len);
