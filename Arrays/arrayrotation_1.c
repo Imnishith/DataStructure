@@ -1,4 +1,4 @@
-// C++ program to rotate an array by 
+// Program to rotate an array by 
 // d elements
 
 #include<stdio.h>
