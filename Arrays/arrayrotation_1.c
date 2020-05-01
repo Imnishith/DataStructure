@@ -2,7 +2,6 @@
 // d elements
 
 #include<stdio.h>
-
 void rotate_array(int *array,unsigned int d,unsigned int len);
 void print_array(int *array,unsigned int len);
 
