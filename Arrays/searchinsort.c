@@ -1,7 +1,7 @@
 /* 
 * Search an element in sorted array
 * Binary Search
-* Time Complexity : 0(log)
+* Time Complexity : 0(logn)
 */
 
 #include<stdio.h>
