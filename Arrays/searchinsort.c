@@ -9,21 +9,6 @@
 int binsearch_sortedarray(int *array,unsigned int start,unsigned int end,int key);
 void print_array(int *array,unsigned int len);
 
-int main()
-{
-	int array[] = {-2,-1,3,4,500,600,700};
-	unsigned int len = sizeof(array)/sizeof(array[0]);
-	print_array(array,len);
-	int key=-2;
-	int index=-1;
-	printf("Searching for element :%d\n",key);
-	index = binsearch_sortedarray(array,0,len-1,key);
-	if(index != -1)
-		printf("Found, Index : %d\n",index);
-	else
-	printf("Not found\n");
-	printf("# Time Complexity O(logn)\n");
-}
 
 int binsearch_sortedarray(int *array,unsigned int start,unsigned int end,int key)
 {
@@ -57,4 +42,20 @@ void print_array(int *array,unsigned int len)
 		printf("%d,",array[i]);
 	}
 	printf("\b}\n");
+}
+
+int main()
+{
+	int array[] = {-2,-1,3,4,500,600,700};
+	unsigned int len = sizeof(array)/sizeof(array[0]);
+	print_array(array,len);
+	int key=-2;
+	int index=-1;
+	printf("Searching for element :%d\n",key);
+	index = binsearch_sortedarray(array,0,len-1,key);
+	if(index != -1)
+		printf("Found, Index : %d\n",index);
+	else
+	printf("Not found\n");
+	printf("# Time Complexity O(logn)\n");
 }
