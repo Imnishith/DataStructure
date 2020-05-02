@@ -23,6 +23,9 @@ void rotate_array(int *array,unsigned int d,unsigned int len)
 	{
 		return;
 	}
+	//If d>n ideally we should rotate for d%n times only
+	//For ex. for n=5, d=5 will provide same output so no need to rotate
+	d = d % len;
 	//Outer for loop will run for d times
 	for(i=0;i<d;i++)
 	{
