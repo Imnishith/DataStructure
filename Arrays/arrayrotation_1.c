@@ -1,4 +1,5 @@
 // Program to rotate an array left by d elements
+// Time Complexity : 0(n*d)
 
 #include<stdio.h>
 void rotate_array(int *array,unsigned int d,unsigned int len);
