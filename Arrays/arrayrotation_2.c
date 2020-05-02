@@ -75,7 +75,6 @@ void rotate_array(int *array,unsigned int d,unsigned int len)
 * For ex. a=5,b=2
 * step 1: a=(5%2),b=2
 * step 2: a=(1%2),b=2 Now a will remain constant and a=1 is the GCD
-*
 */
 int gcd(unsigned int a,unsigned b)
 {
