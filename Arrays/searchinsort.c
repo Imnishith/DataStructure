@@ -9,7 +9,6 @@
 int binsearch_sortedarray(int *array,unsigned int start,unsigned int end,int key);
 void print_array(int *array,unsigned int len);
 
-
 int binsearch_sortedarray(int *array,unsigned int start,unsigned int end,int key)
 {
 	int middle=-1;
@@ -32,7 +31,6 @@ int binsearch_sortedarray(int *array,unsigned int start,unsigned int end,int key
 	}
 	return -1;
 }
-
 void print_array(int *array,unsigned int len)
 {
 	printf("Array = {");
@@ -43,7 +41,6 @@ void print_array(int *array,unsigned int len)
 	}
 	printf("\b}\n");
 }
-
 int main()
 {
 	int array[] = {-2,-1,3,4,500,600,700};
