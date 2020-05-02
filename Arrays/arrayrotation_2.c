@@ -79,10 +79,6 @@ void rotate_array(int *array,unsigned int d,unsigned int len)
 */
 int gcd(unsigned int a,unsigned b)
 {
-#if 1
-    unsigned int x,y;
-    x=a;
-    y=b;
     while(1)
     {
         if(a==0 || b==0) break;
@@ -90,8 +86,6 @@ int gcd(unsigned int a,unsigned b)
     }
     if(a==0) return b;
     else return a;
-#endif
-
 }
 
 void print_array(int *array,unsigned int len)
