@@ -55,5 +55,5 @@ int main()
 	print_array(array,len);
 	rotate_array(array,k,len-1);
 	print_array(array,len);
-	printf("# Time Complexity O(n)\n");
+	printf("# Time Complexity O(n*k)\n");
 }
