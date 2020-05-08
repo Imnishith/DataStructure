@@ -9,7 +9,7 @@
 * Solution:
 * Idea is to use bubble sorting alogorithm. In case of bubble sort, each traversal causes highest values
 * valued element to be at last positing i.e. (n-1,n-2,n-3 and so on)
-* Under this case we can run main loop for k times only and we can get answer in ko(n) time
+* Under this case we can run main loop for k times only and we can get answer in O(nk) time
 */
 
 #include<stdio.h>
@@ -66,5 +66,5 @@ int main()
     printf("Original array is : ");
     print_array(array,len);
     bubble_sortktime(array,len,key);
-    printf("# Time Complexity nO(n)\n");
+    printf("# Time Complexity O(nk)\n");
 }
