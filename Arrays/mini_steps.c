@@ -26,6 +26,7 @@ int minJumps(int arr[], int n)
 	{
 		return 0;
 	}
+	//int arr[] = {1,1,1,1,1,1,1,1,1,1}; 
 	printf("Jump Steps :  {");
 	for(i=1;i<n;i=next_index)
 	{
@@ -34,11 +35,11 @@ int minJumps(int arr[], int n)
 		next_index =i+1;
 		for(j=i+1;j<=arr[i];j++)
 		{
-			if(max < arr[j])
+			if(max <= arr[j])
 			{
 				next_index = j;
 			}
-			if((i+arr[j])>=(n-1))
+			if((i+arr[j]) >= (n-1))
 			{
 				printf("%d, ",arr[j]);
 				b = true;
@@ -47,7 +48,7 @@ int minJumps(int arr[], int n)
 			}
 		}
 		jumps++;
-		if(b == true)
+		if( b == true || (next_index >= (n-1)) )
 		{
 			printf("%d}\n",arr[n-1]);
 			break;
@@ -70,7 +71,8 @@ void print_array(int *array,unsigned int len)
 // Driver program to test above function 
 int main() 
 { 
-	int arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9}; 
+	//int arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9}; 
+	int arr[] = {1,1,1,1,1,1,1,1,1,1}; 
 	int len = sizeof(arr) / sizeof(int); 
 	printf("Original array is : ");
     print_array(arr,len);
